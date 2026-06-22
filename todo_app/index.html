@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- tells browser the character set -->
+  <meta charset="UTF-8" />
+
+  <!-- makes it responsive on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Todo App</title>
+
+  <!-- linking our css file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- main container - everything inside this -->
+  <div class="container">
+
+    <!-- app heading -->
+    <h1>My Todo App</h1>
+
+    <!-- input area - type task and click add -->
+    <div class="input-area">
+      <input type="text" id="todoInput" placeholder="Enter a task..." />
+      <button id="addBtn">Add</button>
+    </div>
+
+    <!-- error message - hidden by default, shows when input is empty -->
+    <p id="errorMsg" class="error">Please enter a task!</p>
+
+    <!-- all todo items will appear here -->
+    <ul id="todoList"></ul>
+
+  </div>
+
+  <!-- linking our js file - at bottom so HTML loads first -->
+  <script src="script.js"></script>
+
+</body>
+</html>
